@@ -6,13 +6,7 @@ styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'app';
-  myKeyDown(event:any) {
-  console.log(event)
-  console.log(event.key)
-  }
-
-  myKeyUp(event:any) {
-    console.log(event)
-    console.log(event.key)
+  myFocusEvent(description:any) {
+    console.log(description)
     }
 }
