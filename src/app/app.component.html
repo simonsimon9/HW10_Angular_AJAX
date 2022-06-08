@@ -1,9 +1,8 @@
-<div (mousedown)="myMouseHandler($event, 'mouse down')"
-(mouseup)="myMouseHandler($event, 'mouse up')"
-(mousemove)="mouseMoveHandler($event, 'mouse moved')">
-This area has<br />
-mouse-down<br />
-and<br />
-mouse-up<br />
-enabled.
-</div>
+
+<p [myHighlight]>Highlight me!</p>
+<p [myHighlight]="'violet'">
+Highlight me too!
+</p>
+<p [myHighlight]="'green'">
+Third Highlight me too!
+</p>
