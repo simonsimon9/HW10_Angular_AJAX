@@ -6,7 +6,15 @@ styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'app';
-  myFocusEvent(description:any) {
-    console.log(description)
-    }
+  myContent='dfsdf';
+  myPastedContent ='';
+cutEvent(content:any) {
+this.myContent = content;
+console.log(content)
+}
+pasteContent(myContent:any) {
+console.log(this.myContent);
+this.myContent = ''
+this.myPastedContent = myContent
+} 
 }
