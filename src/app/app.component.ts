@@ -6,9 +6,13 @@ styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'app';
-  mouseLog = "";
-  myMouseEnter() {
-  console.log("Mouse entered!")
-  this.mouseLog+= "entered!"
-}
+  myKeyDown(event:any) {
+  console.log(event)
+  console.log(event.key)
+  }
+
+  myKeyUp(event:any) {
+    console.log(event)
+    console.log(event.key)
+    }
 }

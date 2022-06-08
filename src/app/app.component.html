@@ -1,8 +1,5 @@
 <h1>
     Welcome to {{title}}!
     </h1>
-    <input type="submit" value="my button" (mouseenter)="myMouseEnter()">
-    <div ng-mouseleave="count = count + 1" ng-init="count=0">Mouse over me!
-        (and mouse away from me...)</div>
-
-     <div>{{mouseLog}}</div>
+    <input type='text' (keydown)="myKeyDown($event)">
+    <input type='text' (keyup)="myKeyUp($event)">
