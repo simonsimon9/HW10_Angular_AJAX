@@ -22,8 +22,8 @@ export class HighLightDirective{
         this.highlight(null);
     }
     private highlight(color: string | null, ) {
-        this.el.nativeElement.style.color = color;
-       
+        //this.el.nativeElement.style.color = color;
+        this.el.nativeElement.style.backgroundColor = color;
     }
 
 
