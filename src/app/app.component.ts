@@ -6,15 +6,14 @@ styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'app';
-  myContent='dfsdf';
-  myPastedContent ='';
-cutEvent(content:any) {
-this.myContent = content;
-console.log(content)
-}
-pasteContent(myContent:any) {
-console.log(this.myContent);
-this.myContent = ''
-this.myPastedContent = myContent
-} 
+  myMouseHandler(event:any, description:any) {
+    console.log(description + " X: "
+    + event.screenX.toString()
+    + " Y:" + event.screenY.toString())
+    }
+    mouseMoveHandler(event:any ,description:any){
+      console.log(description + " X: "
+    + event.screenX.toString()
+    + " Y:" + event.screenY.toString())
+    }
 }
